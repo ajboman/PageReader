@@ -91,17 +91,18 @@ const Summarize = () => {
           ))}
         </div>
         <div className='my-2 w-full flex justify-end'>
-          <button
-            type='button' 
-            className='clear_btn peer-focus:border-gray-700 peer-focus:text-gray-700'
-            onClick={() => {
-              localStorage.clear('articles');
-              setAllArticles([]); 
-            }}
-          >
-            Clear History
-          </button>
-
+          {allArticles.length > 0 && (
+            <button
+              type='button'
+              className='clear_btn peer-focus:border-gray-700 peer-focus:text-gray-700'
+              onClick={() => {
+                localStorage.clear();
+                setAllArticles([]);
+              }}
+            >
+              Clear History
+            </button>
+          )}
         </div>
       </div>
 
