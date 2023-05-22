@@ -1,8 +1,19 @@
-import React from 'react'
+import Info from './components/Info';
+import Summarize from './components/Summarize';
+
+import './App.css';
 
 const App = () => {
   return (
-    <div>App</div>
+    <main>
+        <div className='main'>
+            <div className='gradient'/>
+        </div>
+        <div className='app'>
+            <Info/>
+            <Summarize/>
+        </div>
+    </main>
   )
 }
 
