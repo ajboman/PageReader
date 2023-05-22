@@ -15,7 +15,7 @@ const Info = () => {
         </nav>
 
         <h1 className='head_text'>
-            Summarize the Contents of <br/> Webpages or Articles <br />
+            Summarize the Contents of <br/> Webpages or Articles with <br />
             <span className='blue_gradient'>
                 OpenAI GPT-4
             </span>
