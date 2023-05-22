@@ -17,7 +17,7 @@
 }
 
 .main:before {
-  background: radial-gradient(circle, rgba(2, 0, 36, 0) 0, #fafafa 100%);
+  background: radial-gradient(circle, rgba(2, 0, 36, 0) 0, #323753 100%);
   position: absolute;
   content: "";
   z-index: 2;
@@ -34,7 +34,7 @@
   width: 100%;
   height: 100%;
   top: 0;
-  opacity: 0.4;
+  opacity: 0.5;
   filter: invert(1);
 }
 
@@ -60,7 +60,7 @@
   height: 100%;
   filter: blur(100px) saturate(150%);
   top: 80px;
-  opacity: 0.15;
+  opacity: 0.70;
 }
 
 @media screen and (max-width: 640px) {
@@ -92,7 +92,7 @@
 }
 
 .url_input {
-  @apply block w-full rounded-md border border-gray-200 bg-white py-2.5 pl-10 pr-12 text-sm shadow-lg font-satoshi font-medium focus:border-black focus:outline-none focus:ring-0;
+  @apply block w-full rounded-md border border-gray-200 bg-white/60 py-2.5 pl-10 pr-12 text-sm shadow-lg font-satoshi font-medium focus:border-black focus:outline-none focus:ring-0;
 }
 
 .submit_btn {
@@ -100,7 +100,7 @@
 }
 
 .link_card {
-  @apply p-3 flex justify-start items-center flex-row bg-white border border-gray-200 gap-3 rounded-lg cursor-pointer;
+  @apply p-3 flex justify-start items-center flex-row bg-white/60 border border-gray-200 gap-3 rounded-lg cursor-pointer;
 }
 
 .copy_btn {
@@ -112,5 +112,9 @@
 }
 
 .summary_box {
-  @apply rounded-xl border border-gray-200 bg-white/20 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur p-4;
+  @apply rounded-xl border border-gray-200 bg-white/60 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur p-4;
+}
+
+.clear_btn {
+  @apply rounded-full border border-gray-400 bg-gray-500 py-1.5 px-5 text-sm text-white transition-all hover:bg-white hover:text-black;
 }

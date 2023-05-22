@@ -4,11 +4,11 @@ const Info = () => {
   return (
     <header className='w-full flex justify-center items-center flex-col'>
         <nav className='flex justify-between items-center w-full mb-10 pt-3'>
-            <img src={logo} alt="page_reader_logo" className='w-28 object-contain'/>
+            <img src={logo} alt="page_reader_logo" className='w-20 object-contain'/>
 
             <button 
             type='button' 
-            onClick={() => window.open('https://github.com/ajboman')} 
+            onClick={() => window.open('https://github.com/ajboman/PageReader')} 
             className='black_btn'>
                 GitHub
             </button>
@@ -21,9 +21,9 @@ const Info = () => {
             </span>
         </h1>
         <h2 className='desc'>
-            Simplify your reading with Page Reader, 
-            an open-source web page summarizer that transforms 
-            lengthy articles into clear and consice summaries
+            Expedite your online reading with Page Reader, 
+            an open-source web page summarizer that transforms
+            lengthy articles or webpages into clear and compact summaries
         </h2>
     </header>
   )
